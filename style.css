@@ -1,0 +1,90 @@
+{
+    margin: 0;
+    padding: 0;
+    box-string: border-box;
+}
+
+body{
+    height:500vh;
+    padding-top: 20vh;
+}
+
+.header {
+    background-color: tomato;
+    height: 15vh;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: center;
+    align-items: center;
+}
+
+.relative-div {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    position: relative;
+    top: 25px;
+    left:10px;
+}
+
+.absolute-parent {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.absolute-div {
+    height: 100px;
+    width: 100px;
+    background-color: seagreen;
+    position: absolute;
+    top: 15px;
+    right:10px;
+}
+
+.sticky.div {
+    width: 50vw;
+    height: 5vw;
+    background-color: lawngreen;
+    position: sticky;
+    top: 20vh;
+}
+
+.fixed-image  {
+    height: 50px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.overlay-parent {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    padding: 15px;
+    position: relative;
+}
+
+.overlaychild {
+    height: 100%;
+    width: 100%;
+    opacity: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-child:hover {
+    background-image: url('https://cjmart.jp/en/upload/save_image/0126_190824_mp4otl_y_3.jpg');    
+    background-size: 100%;
+}
